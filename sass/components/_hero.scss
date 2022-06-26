@@ -1,0 +1,44 @@
+
+@media screen and (max-width:1599px) {
+    .hero__container {
+        margin-bottom: 60px;
+    }
+}
+
+.hero__container{
+    padding: 118px 0 118px 0;
+    background-color: $bgHero;
+    background-image: url(../../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .hero__title{
+        text-align: center;
+        color: $colorWhite;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        /* or 162% */        
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    .hero__button{
+        padding: 10px 32px;
+        display: block;
+        margin: 0 auto;
+        background-color: $colorAncient;
+        border: none;
+        color:$colorWhite;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and(min-width:0px)and(max-width:767px){
+    .modal__wrap {
+            display: none;
+        }
+}

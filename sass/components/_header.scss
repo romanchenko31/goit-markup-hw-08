@@ -1,0 +1,41 @@
+.header__wrap{
+    background-color: $colorWhite;
+}
+.header__logo{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: $colorMain;
+    display: inline-flex;
+
+    .header__logo--color{
+        color: $colorAncient;
+    }
+}
+
+
+@media screen and (min-width:0px)and(max-width:767px) {
+    .mobile-nav {
+            justify-content: space-between;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            padding: 15px 16px;
+        }
+    .button-icon {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            cursor: pointer;
+            border: none;
+        }
+    .header__nav{
+        display: none;
+    }
+}
+
+
+

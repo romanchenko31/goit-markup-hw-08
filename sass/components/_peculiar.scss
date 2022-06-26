@@ -1,0 +1,51 @@
+.about-list {
+    padding-left: 15px;
+    padding-right: 15px;
+    
+  .title {
+        text-align: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $colorMain;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        }
+  .description{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        color: $colorSecond;
+    }
+
+   .icon {
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        width: 100%;
+        background-color: $bgPeculiar;
+    
+      &.one{
+            background-image: url(../../images/antenna.svg);
+        }
+      &.two {
+            background-image: url(../../images/clock.svg);
+        }
+      &.three {
+            background-image: url(../../images/diagram.svg);
+        }
+      &.four {
+            background-image: url(../../images/astronaut.svg);
+        }
+    }
+}
+
+
