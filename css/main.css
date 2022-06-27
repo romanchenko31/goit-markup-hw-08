@@ -11,7 +11,6 @@
 
 .header__logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -48,15 +47,22 @@
     display: inline-flex;
     cursor: pointer;
     border: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: transparent;
+  }
+  .button-icon .icon {
+    background-image: url(../../images/menu_24px.svg);
+    width: 24px;
+    height: 16px;
+    display: block;
   }
   .header__nav {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1599px) {
-  .hero__container {
-    margin-bottom: 60px;
   }
 }
 
@@ -100,7 +106,8 @@
   }
 }
 
-.about-list {
+.container {
+  margin-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -160,10 +167,6 @@
   .our-work {
     display: none;
   }
-}
-
-.our-team {
-  margin-top: 60px;
 }
 
 .our-team .title-center {
@@ -250,5 +253,242 @@
 
 .list-icon .icon:last-child {
   margin-right: 0;
+}
+
+.title-clients {
+  text-align: center;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients .item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 46%;
+  border: 1px solid #AFB1B8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px 0;
+  margin-top: 30px;
+}
+
+.clients .item:hover, .clients .item:focus {
+  border: 1px solid #2196F3;
+}
+
+.clients .item .icon-clients {
+  fill: #AFB1B8;
+}
+
+.clients .item:hover .icon-clients {
+  fill: #2196F3;
+}
+
+.clients .item:nth-child(2n+1) {
+  margin-right: 6.666%;
+}
+
+.adress {
+  background-color: #2F303A;
+  text-align: center;
+  padding: 60px 15px;
+}
+
+.logo-footer {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+.logo-footer .logo-web {
+  color: #2196F3;
+}
+
+.contact-footer {
+  margin-bottom: 60px;
+}
+
+.contact-footer .item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.contact-footer .item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-footer .link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.list-social .footer-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #FFFFFF;
+}
+
+.list-social .footer-icon:hover, .list-social .footer-icon:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.list-social .icon:last-child {
+  margin-right: 0;
+}
+
+.form-mail .follow-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.wrap-follow .lable-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.wrap-follow .mail-anime {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+.wrap-follow .input-mail:focus ~ .mail-anime,
+.wrap-follow .input-mail:not(:placeholder-shown) ~ .mail-anime {
+  -webkit-transform: translateY(-210%);
+          transform: translateY(-210%);
+}
+
+.wrap-follow .input-mail {
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.wrap-follow .button-follow {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background-color: #2196F3;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 28px;
+  margin: 0 auto;
+}
+
+.wrap-follow .button-follow:after {
+  content: '';
+  background-image: url(../../images/icon_send.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */

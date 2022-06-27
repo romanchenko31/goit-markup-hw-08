@@ -1,0 +1,169 @@
+.adress {
+    background-color: $bgFooter;
+    text-align: center;
+    padding: 60px 15px;
+}
+
+.logo-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: $colorWhite;
+    display: inline-flex;
+    margin-bottom: 20px;
+
+    .logo-web {
+        color: $colorAncient;
+    }
+}
+
+.contact-footer {
+    margin-bottom: 60px;
+
+    .item {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 171%;
+            letter-spacing: 0.03em;
+            color: $colorWhite ;
+            margin-bottom: 8px;
+        }
+    .item:last-child{
+        margin-bottom: 0;
+    }
+
+    .link{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height:171%;
+            letter-spacing: 0.03em;      
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+
+    .join{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $colorWhite;
+        margin-bottom: 20px;
+    }
+
+    .list-social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    .footer-icon{
+        display: inline-flex;
+        margin-right: 10px;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        fill:$colorWhite;
+
+        &:hover,
+        &:focus{
+          background-color: rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+        }
+    }
+    .icon:last-child{
+        margin-right: 0;
+    }
+}
+
+.form-mail{
+
+    .follow-title{
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $colorWhite;
+        margin-bottom: 20px;
+    }
+}
+
+.wrap-follow{
+
+   .lable-mail{
+      display: flex;
+      position: relative;
+      margin-bottom: 20px;
+   }
+
+   .mail-anime{
+       font-family: 'Roboto';
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 125%;
+       display: flex;
+       align-items: center;
+       letter-spacing: 0.03em;
+       color: rgba(255, 255, 255, 0.6);
+       position: absolute;
+       left: 15px;
+       top: 50%;
+       transform: translateY(-50%);
+       transition: transform 250ms linear;
+   }
+
+        .input-mail:focus ~ .mail-anime,
+        .input-mail:not(:placeholder-shown) ~ .mail-anime{
+            transform:translateY(-210%);
+        }
+
+   .input-mail{
+       width: 100%;
+       outline:none ;
+       padding: 15px;
+       box-sizing: border-box;
+       background-color: transparent;
+       border: 1px solid rgba(255, 255, 255, 0.3);
+       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+       border-radius: 4px;
+   }
+
+   .button-follow{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 188%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $colorWhite;
+    background-color:$colorAncient;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+    margin: 0 auto;
+   }
+
+   .button-follow:after{
+       content: '';
+       background-image:url(../../images/icon_send.svg);
+       width: 24px;
+       height: 24px;
+       margin-left: 10px;
+      
+   }
+}

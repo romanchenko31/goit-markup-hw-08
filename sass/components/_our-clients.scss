@@ -1,0 +1,36 @@
+.title-clients{
+    text-align: center;
+}
+
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+        display: inline-flex;
+        width: 46%;
+        border: 1px solid $fillIcon;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 0;
+        margin-top: 30px;
+        
+        &:hover,
+        &:focus{
+            border:1px solid $colorAncient;
+        }
+
+        & .icon-clients{
+            fill:$fillIcon;
+        }
+          
+        &:hover .icon-clients{
+               fill: $colorAncient;
+           }
+        }
+
+        .item:nth-child(2n+1){
+            margin-right: 6.666%;
+        }
+
+}
