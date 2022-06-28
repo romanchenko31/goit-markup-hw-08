@@ -16,6 +16,8 @@
 .team{
     padding-left: 15px;
     padding-right: 15px;
+    justify-content: center;
+    margin: -15px -15px;
 
     .item{
         text-align:center;
@@ -23,7 +25,6 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-        margin-bottom: 30px;
         padding-bottom: 24px;
         
         .title{
@@ -48,6 +49,18 @@
             letter-spacing: 0.03em;
             color: $colorSecond;
             margin-bottom: 16px;
+        }
+    }
+}
+
+@media screen and(min-width:480px) and(max-width:1599px) {
+    .team{
+        display: flex;
+        flex-wrap: wrap;
+
+        .item{
+            width:calc((91%-1*30px)/2);
+            margin: 15px;
         }
     }
 }

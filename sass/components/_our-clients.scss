@@ -1,20 +1,32 @@
 .title-clients{
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .clients{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -15px;
+    margin-bottom: -15px;
 
     .item {
         display: inline-flex;
-        width: 46%;
         border: 1px solid $fillIcon;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         padding: 16px 0;
-        margin-top: 30px;
-        
+        width: 40%;
+        margin:15px;
+ 
+        @media screen and(min-width:768px) {
+                width:calc((100%-3*30px)/4);
+                margin:15px;
+            }
+        @media(min-width:1600px) {
+                width: calc((100%-2*30px)/7);
+                margin:15px;
+            }
         &:hover,
         &:focus{
             border:1px solid $colorAncient;
@@ -28,9 +40,6 @@
                fill: $colorAncient;
            }
         }
-
-        .item:nth-child(2n+1){
-            margin-right: 6.666%;
-        }
+        
 
 }

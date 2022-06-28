@@ -49,6 +49,21 @@
             background-image: url(../../images/astronaut.svg);
         }
     }
+
+    @media screen and(min-width:768px) {
+       
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -15px;
+        margin-bottom: -15px;
+        justify-content:center;
+      
+        .item{
+          width:calc((91%-1*30px)/2);
+          margin: 15px;
+        }
+      }
+  
 }
 
 
