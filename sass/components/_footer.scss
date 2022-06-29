@@ -2,6 +2,25 @@
     background-color: $bgFooter;
     text-align: center;
     padding: 60px 15px;
+
+    @media screen and(min-width:768px) {
+        .footer-tablet{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 60px;
+        }
+    }
+
+    @media screen and(min-width:1600px) {
+        .footer-tablet {
+            margin-right: 93px;
+            margin-bottom: 0;
+        }
+    }
+    @media screen and(min-width:1600px) {
+        display: flex;
+        justify-content:center;
+    }
 }
 
 .logo-footer {
@@ -21,7 +40,13 @@
 }
 
 .contact-footer {
-    margin-bottom: 60px;
+    @media screen and(max-width:767px) {
+            margin-bottom: 60px;
+    }
+    
+    @media screen and(min-width:1600px) {
+            margin-right:70px;
+    }
 
     .item {
             font-family: 'Roboto';
@@ -106,6 +131,10 @@
       display: flex;
       position: relative;
       margin-bottom: 20px;
+
+      @media screen and (min-width:768px) {
+          justify-content: center;
+      }
    }
 
    .mail-anime{
@@ -122,6 +151,10 @@
        top: 50%;
        transform: translateY(-50%);
        transition: transform 250ms linear;
+       
+       @media screen and (min-width:768px) and(max-width:1599px) {
+                left: 170px;
+            }
    }
 
         .input-mail:focus ~ .mail-anime,
@@ -138,6 +171,10 @@
        border: 1px solid rgba(255, 255, 255, 0.3);
        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
        border-radius: 4px;
+       
+       @media screen and(min-width:768px) {
+           width:450px;
+       }
    }
 
    .button-follow{
@@ -167,3 +204,4 @@
       
    }
 }
+
