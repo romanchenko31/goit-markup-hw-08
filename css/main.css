@@ -855,11 +855,13 @@ body {
   top: 8px;
 }
 
-.modal__container .modal__form {
-  width: 370px;
+@media screen and (min-width: 480px) {
+  .modal__container .modal__form {
+    width: 370px;
+  }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) {
   .modal__container .modal__form {
     width: 448px;
   }

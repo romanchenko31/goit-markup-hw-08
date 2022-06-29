@@ -48,9 +48,11 @@
         }
 
         .modal__form{
-            width: 370px;
+            @media screen and(min-width:480px) {
+                    width: 370px;
+            }
            
-            @media screen and(min-width:1600px) {
+            @media screen and(min-width:768px) {
                 width: 448px;
             }
         }
