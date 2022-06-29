@@ -7,39 +7,54 @@
 
 body {
   position: relative;
+  margin: 0 auto;
 }
 
 .container {
+  margin: 0 auto;
   margin-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (min-width: 1600px) {
-  .container {
-    margin-bottom: 90px;
-  }
-}
-
-body {
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 480px) {
-  body {
+  .container {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  body {
+  .container {
     width: 768px;
   }
 }
 
-@media screen and (min-width: 1600px) {
-  body {
-    width: 1600px;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin-bottom: 90px;
+  }
+}
+
+.header {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .header {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
   }
 }
 
@@ -51,7 +66,7 @@ body {
           justify-content: center;
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .header__wrap .header__logo {
     margin-right: 88px;
   }
@@ -127,7 +142,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
   }
@@ -210,6 +225,13 @@ body {
   background-image: url(../../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    margin-bottom: 94px;
+  }
 }
 
 .hero__container .hero__title {
@@ -313,19 +335,19 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .about-list .item {
-    width: calc((91%-3*30px)/4);
+    width: calc((90%-3*30px)/4);
   }
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .our-work {
     display: none;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .our-work {
     display: block;
     text-align: center;
@@ -430,7 +452,7 @@ body {
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -439,14 +461,14 @@ body {
         flex-wrap: wrap;
   }
   .team .item {
-    width: calc((91%-1*30px)/2);
+    width: calc((92%-1*30px)/2);
     margin: 15px;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team .item {
-    width: calc((92%-3*30px)/4);
+    width: calc((90%-3*30px)/4);
   }
 }
 
@@ -528,14 +550,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .clients .item {
-    width: calc((100%-3*30px)/4);
+    width: calc((116%-3*30px)/4);
     margin: 15px;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .clients .item {
-    width: calc((100%-2*30px)/7);
+    width: calc((98%-2*30px)/7);
     margin: 15px;
   }
 }
@@ -569,14 +591,14 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .adress .footer-tablet {
     margin-right: 93px;
     margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .adress {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -611,7 +633,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact-footer {
     margin-right: 70px;
   }
@@ -701,11 +723,18 @@ body {
 }
 
 .wrap-follow .lable-mail {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 450px) {
+  .wrap-follow .lable-mail {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -738,12 +767,6 @@ body {
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
   transition: transform 250ms linear, -webkit-transform 250ms linear;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1599px) {
-  .wrap-follow .mail-anime {
-    left: 170px;
-  }
 }
 
 .wrap-follow .input-mail:focus ~ .mail-anime,

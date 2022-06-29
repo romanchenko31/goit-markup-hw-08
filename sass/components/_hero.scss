@@ -6,6 +6,11 @@
     background-image: url(../../images/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 94px;
+    }
     
     .hero__title{
         text-align: center;

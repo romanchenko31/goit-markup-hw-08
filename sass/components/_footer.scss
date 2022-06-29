@@ -11,13 +11,13 @@
         }
     }
 
-    @media screen and(min-width:1600px) {
+    @media screen and(min-width:1200px) {
         .footer-tablet {
             margin-right: 93px;
             margin-bottom: 0;
         }
     }
-    @media screen and(min-width:1600px) {
+    @media screen and(min-width:1200px) {
         display: flex;
         justify-content:center;
     }
@@ -44,7 +44,7 @@
             margin-bottom: 60px;
     }
     
-    @media screen and(min-width:1600px) {
+    @media screen and(min-width:1200px) {
             margin-right:70px;
     }
 
@@ -128,6 +128,10 @@
 .wrap-follow{
 
    .lable-mail{
+        margin: 0 auto;
+    @media screen and (min-width:450px) {
+            width: 450px;
+        }
       display: flex;
       position: relative;
       margin-bottom: 20px;
@@ -138,6 +142,8 @@
    }
 
    .mail-anime{
+
+
        font-family: 'Roboto';
        font-weight: 400;
        font-size: 16px;
@@ -152,8 +158,8 @@
        transform: translateY(-50%);
        transition: transform 250ms linear;
        
-       @media screen and (min-width:768px) and(max-width:1599px) {
-                left: 170px;
+       @media screen and (min-width:768px) and(max-width:1199px) {
+                
             }
    }
 
