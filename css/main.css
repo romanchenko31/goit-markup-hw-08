@@ -64,6 +64,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 @media screen and (max-width: 1199px) {
@@ -90,7 +91,7 @@ body {
   .header__wrap .header__logo {
     padding: 26px 0;
   }
-  .button-icon {
+  .button-menu {
     display: none;
   }
   .header__nav {
@@ -192,7 +193,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .button-icon {
+  .button-menu {
     width: 40px;
     height: 40px;
     display: -webkit-inline-box;
@@ -208,14 +209,55 @@ body {
             justify-content: center;
     background-color: transparent;
   }
-  .button-icon .icon {
-    background-image: url(../../images/menu_24px.svg);
-    width: 24px;
-    height: 16px;
+  .button-menu .icon-cross {
+    display: none;
+  }
+  .button-menu.is-open .icon-cross {
     display: block;
+  }
+  .button-menu.is-open .icon-menu {
+    display: none;
   }
   .header__nav {
     display: none;
+    text-align: center;
+  }
+  .header__nav.is-open {
+    display: block;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .header__nav .menu {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .header__nav .menu .menu__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .header__nav .contacts .contacts__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  .header__nav .contacts .contacts__icon {
+    width: 20px;
+    height: 20px;
+    fill: #757575;
+    margin-right: 5px;
   }
 }
 

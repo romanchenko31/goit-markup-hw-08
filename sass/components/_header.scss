@@ -1,6 +1,7 @@
   
  .header{
     margin: 0 auto;
+   
 
  @media screen and(min-width:480px) {
      width: 480px;
@@ -20,6 +21,7 @@
         background-color: $colorWhite;
         padding: 0 15px;
         justify-content: center;
+        position: relative;
 
         @media screen and(max-width:1199px) {
             
@@ -48,7 +50,7 @@
            }
         }
 
-        .button-icon{
+        .button-menu{
             display: none;
         }
 
@@ -145,7 +147,7 @@
             align-items: center;
         }
    
-        .button-icon {
+        .button-menu {
             width: 40px;
             height: 40px;
             display: inline-flex;
@@ -155,16 +157,64 @@
             justify-content: center;
             background-color: transparent;
 
-            & .icon{
-                background-image: url(../../images/menu_24px.svg);
-                width: 24px;
-                height: 16px;
-                display: block;
+            .icon-cross{
+                display: none;
             }
+
+            &.is-open .icon-cross{
+                display: block;
+                
+            }
+            &.is-open .icon-menu {
+                display: none;
+            }            
         }
     .header__nav{
         display: none;
+        text-align: center;
+        
+        &.is-open{
+            display: block;
+            position: absolute;
+            background-color: white;
+            top: 100%;
+            left: 0;
+            width: 100%;
+        }
+
+        .menu{
+            margin: 0 auto;
+            margin-bottom: 20px;
+            .menu__link{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 47px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color:$colorMain;
+            }
+        }
+        .contacts{
+            .contacts__link{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 0.02em;
+                color:$colorSecond ;
+            }
+            .contacts__icon{
+                width: 20px;
+                height: 20px;
+                fill:$colorSecond;
+                margin-right: 5px;
+            }
+        }
     }
+       
 
  }
 

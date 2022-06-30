@@ -13,17 +13,19 @@
   <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
-  <div class="wrapper">
     <!-- open header -->
   <header class="header">
      <div class="header__wrap"> 
        <div class="mobile-nav">
          <a href="index.html" class="header__logo"><span class="header__logo--color">Web</span>Studio</a>
-         <button class="button-icon">
-           <svg class="icon"></svg>
+         <button class="button-menu is-open" aria-expanded="false" data-menu-button>
+           <svg width="40" height="40" class="mobile-menu" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu" href="./images/mobile_menu.svg#icon-close_40px"></use> 
+            <use class="icon-cross" href="./images/mobile_menu.svg#icon-menu_24px"></use>
+           </svg>
          </button>
       </div>
-      <nav class="header__nav">
+      <nav class="header__nav " data-menu>
         <ul class="menu list">
           <li class="menu__item"><a href="./index.html" class="menu__link current">Студия</a></li>
           <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
@@ -365,6 +367,6 @@
   </footer>
    <!-- close footer -->
   <script src="./js/modal.js"></script>
-  </div>
+  <script src="./js/menu.js"></script>
 </body>
 </html>
