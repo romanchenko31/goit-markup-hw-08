@@ -218,6 +218,11 @@ body {
   .button-menu.is-open .icon-menu {
     display: none;
   }
+  .button-menu:active,
+  .button-menu:focus,
+  .button-menu:hover {
+    outline: none;
+  }
   .header__nav {
     display: none;
     text-align: center;
