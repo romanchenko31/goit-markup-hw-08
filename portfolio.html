@@ -16,8 +16,16 @@
     <!-- open header -->
     <header class="header">
       <div class="header__wrap">
-        <nav class="header__nav">
+        <div class="mobile-nav">
           <a href="index.html" class="header__logo"><span class="header__logo--color">Web</span>Studio</a>
+          <button class="button-menu is-open" aria-expanded="false" data-menu-button>
+            <svg width="40" height="40" class="mobile-menu" aria-label="Переключатель мобильного меню">
+              <use class="icon-menu" href="./images/mobile_menu.svg#icon-close_40px"></use>
+              <use class="icon-cross" href="./images/mobile_menu.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="header__nav " data-menu>
           <ul class="menu list">
             <li class="menu__item"><a href="./index.html" class="menu__link">Студия</a></li>
             <li class="menu__item"><a href="./portfolio.html" class="menu__link current">Портфолио</a></li>
@@ -26,14 +34,14 @@
           <ul class="contacts list">
             <li class="contacts__item">
               <a href="mailto:info@example.com" class="contacts__link">
-                <svg class="contacts__icon contacts__icon--mail">
+                <svg width="14" height="10" class="contacts__icon contacts__icon--mail">
                   <use href="./images/symbol-defs.svg#icon-mail"></use>
                 </svg>info@example.com
               </a>
             </li>
             <li class="contacts__item">
               <a href="tel:+380991111111" class="contacts__link">
-                <svg class="contacts__icon contacts__icon--phone">
+                <svg width="10" height="14" class="contacts__icon contacts__icon--phone">
                   <use href="./images/symbol-defs.svg#icon-phone"></use>
                 </svg>+38 099 111 11 11
               </a>
@@ -45,7 +53,7 @@
     <!-- close header -->
     <main>
       <section class="section-work">
-         <div class="container"> 
+         <div class="container filter-wrap"> 
           <ul class="filter list">
             <li class="item"><button type="button" class="button secondary">Все</button></li>
             <li class="item"><button type="button" class="button primary">Веб-сайты</button></li>
@@ -59,7 +67,7 @@
                 <div class="work-overlay">
                   <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
-                  <img src="./images/1.jpg" alt="tehnokryak" width="370">
+                  <img src="./images/1.jpg" alt="tehnokryak"  width="100%">
                 </div>
                 <div class="work-app">
                   <h3 class="title">Технокряк</h3>
@@ -73,7 +81,7 @@
                   <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                     посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
-                <img src="./images/2.jpg" alt="poster" width="370">
+                <img src="./images/2.jpg" alt="poster" width="100%">
                 </div>
                 <div class="work-app">
                   <h3 class="title">Постер New Orlean vs Golden Star</h3>
@@ -87,7 +95,7 @@
                   <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                     посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
-                <img src="./images/3.jpg" alt="restourant" width="370">
+                <img src="./images/3.jpg" alt="restourant" width="100%">
                 </div>
                 <div class="work-app">
                   <h3 class="title">Ресторан Seafood</h3>
@@ -101,7 +109,7 @@
                   <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                     посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
-                <img src="./images/4.jpg" alt="prime" width="370">
+                <img src="./images/4.jpg" alt="prime"  width="100%">
                 </div>
                 <div class="work-app">
                   <h3 class="title">Проект Prime</h3>
@@ -115,7 +123,7 @@
                   <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                     посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
-                <img src="./images/5.jpg" alt="boxes" width="370">
+                <img src="./images/5.jpg" alt="boxes"  width="100%">
                 </div>
                 <div class="work-app">
                   <h3 class="title">Проект Boxes</h3>
@@ -129,7 +137,7 @@
                   <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                     посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
-                <img src="./images/6.jpg" alt="borders" width="370">
+                <img src="./images/6.jpg" alt="borders" width="100%">
                 </div>
                 <div class="work-app">
                   <h3 class="title">Inspiration has no Borders</h3>
@@ -143,7 +151,7 @@
                   <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                     посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
-                <img src="./images/7.jpg" alt="limited edition" width="370" >
+                <img src="./images/7.jpg" alt="limited edition" width="100%" >
                 </div>
                 <div class="work-app">
                   <h3 class="title">Издание Limited Edition</h3>
@@ -157,7 +165,7 @@
                   <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                     посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
-                <img src="./images/8.jpg" alt="lab" width="370">
+                <img src="./images/8.jpg" alt="lab" width="100%">
                 </div>
                 <div class="work-app">
                   <h3 class="title">Проект LAB</h3>
@@ -171,7 +179,7 @@
                   <p class="overlay">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                     посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
-                <img src="./images/9.jpg" alt="business" width="370">
+                <img src="./images/9.jpg" alt="business" width="100%">
                 </div>
                 <div class="work-app">
                   <h3 class="title">Growing Business</h3>
@@ -186,42 +194,44 @@
   <!-- open footer -->
   <footer class="footer">
     <address>
-      <div class="container adress">
-        <div class="contact-footer">
-          <a href="index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
-          <ul class="list">
-            <li>г. Киев, пр-т Леси Украинки, 26</li>
-            <li><a href="mailto:info@example.com" class="link">info@example.com</a></li>
-            <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
-          </ul>
-        </div>
-        <div clas="social-footer">
-          <div class="join">Присоединяйтесь</div>
-          <ul class="list-icon social">
-            <li class="icon">
-              <svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </li>
-            <li class="icon">
-              <svg width="20" height="16.25">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </li>
-            <li class="icon">
-              <svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </li>
-            <li class="icon">
-              <svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </li>
-          </ul>
+      <div class="adress">
+        <div class="footer-tablet">
+          <div class="contact-footer">
+            <a href="index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+            <ul class="list">
+              <li class="item">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="item"><a href="mailto:info@example.com" class="link">info@example.com</a></li>
+              <li class="item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+            </ul>
+          </div>
+          <div clas="social-footer">
+            <div class="join">Присоединяйтесь</div>
+            <ul class="list-social">
+              <li class="footer-icon">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </li>
+              <li class="footer-icon">
+                <svg width="20" height="16.25">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </li>
+              <li class="footer-icon">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="footer-icon">
+                <svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
         <form class="form-mail">
-          <span class="follow-title">Подпишись на рассылку</span>
+          <div class="follow-title">Подпишись на рассылку</div>
           <div class="wrap-follow">
             <label class="lable-mail">
               <input class="input-mail" type="email" placeholder=" ">
@@ -234,5 +244,6 @@
     </address>
   </footer>
     <!-- close footer -->
+    <script src="./js/menu.js"></script>
   </body>   
 </html>
