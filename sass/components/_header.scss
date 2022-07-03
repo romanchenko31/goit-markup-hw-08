@@ -38,6 +38,36 @@
         }
        
  }
+
+ .header__nav{
+    
+    .menu__link{
+        position: relative;
+    }
+    
+    .menu__link.current:after{
+        content: '';
+        height: 4px;
+        width: 100%;
+        background-image:url(../../images/hover.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        border-radius: 2px;
+    }
+
+     .menu__item:hover .menu__link,
+     .menu__item:focus .menu__link
+    {
+         color: $colorAncient;
+     }
+     .menu__link.current:visited{
+         color: $colorAncient;
+    }
+
+ }
     
     @media screen and (min-width:768px){
         .header__wrap {
@@ -83,6 +113,16 @@
 
       .contacts__item{
 
+        &:hover .contacts__link,
+        &:focus .contacts__link{
+            color: $colorAncient;
+        }
+
+        &:hover .contacts__icon,
+        &:focus .contacts__icon {
+            fill: $colorAncient;
+        }
+
         .contacts__link{
         font-family: 'Roboto';
         font-weight: 500;
@@ -92,6 +132,7 @@
         color:$colorSecond;
         display: flex;
         align-items: center;
+
         }
         .contacts__icon{
             margin-right: 8px;
@@ -167,7 +208,15 @@
             }
             &.is-open .icon-menu {
                 display: none;
-            }            
+            } 
+                  .icon-cross:hover, 
+                  .icon-cross:focus,
+                  .icon-menu:hover,
+                  .icon-menu:focus{
+                    &:hover {
+                            fill: $colorAncient;
+                        }
+            }           
         }
 
     .button-menu:active,

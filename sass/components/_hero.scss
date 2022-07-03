@@ -3,10 +3,53 @@
 .hero__container{
     padding: 118px 0 118px 0;
     background-color: $bgHero;
-    background-image: url(../../images/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 60px;
+     background-image: url(../../images/Header.jpg);
+    background-repeat: no-repeat;
+                background-size: cover;
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero__container {
+                background-image: url(../../images/Header@2x.jpg);
+            }
+        }
+    
+        @media screen and(min-width:450px){
+        
+            background-image: url(../../images/Header2.jpg);
+        
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .hero__container {
+                    background-image: url(../../images/Header2@2x.jpg);
+                }
+            }
+
+        }
+
+                @media screen and(min-width:768px) {
+        
+                    background-image: url(../../images/heder3.jpg);
+        
+                    @media (min-device-pixel-ratio: 2),
+                    (-webkit-min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        .hero__container {
+                            background-image: url(../../images/heder3@2x.jpg);
+                
+                        }
+                    }
+        
+                }
+
+                
+
 
     @media screen and (min-width:1200px) {
         margin-bottom: 94px;

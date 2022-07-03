@@ -79,6 +79,32 @@ body {
   }
 }
 
+.header__nav .menu__link {
+  position: relative;
+}
+
+.header__nav .menu__link.current:after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-image: url(../../images/hover.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 2px;
+}
+
+.header__nav .menu__item:hover .menu__link,
+.header__nav .menu__item:focus .menu__link {
+  color: #2196F3;
+}
+
+.header__nav .menu__link.current:visited {
+  color: #2196F3;
+}
+
 @media screen and (min-width: 768px) {
   .header__wrap {
     display: -webkit-box;
@@ -122,6 +148,14 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .contacts__item:hover .contacts__link,
+  .contacts__item:focus .contacts__link {
+    color: #2196F3;
+  }
+  .contacts__item:hover .contacts__icon,
+  .contacts__item:focus .contacts__icon {
+    fill: #2196F3;
   }
   .contacts__item .contacts__link {
     font-family: 'Roboto';
@@ -218,6 +252,12 @@ body {
   .button-menu.is-open .icon-menu {
     display: none;
   }
+  .button-menu .icon-cross:hover:hover,
+  .button-menu .icon-cross:focus:hover,
+  .button-menu .icon-menu:hover:hover,
+  .button-menu .icon-menu:focus:hover {
+    fill: #2196F3;
+  }
   .button-menu:active,
   .button-menu:focus,
   .button-menu:hover,
@@ -270,10 +310,40 @@ body {
 .hero__container {
   padding: 118px 0 118px 0;
   background-color: #C4C4C4;
-  background-image: url(../../images/hero.jpg);
+  margin-bottom: 60px;
+  background-image: url(../../images/Header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 60px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__container .hero__container {
+    background-image: url(../../images/Header@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .hero__container {
+    background-image: url(../../images/Header2.jpg);
+  }
+}
+
+@media screen and (min-width: 450px) and (min-device-pixel-ratio: 2), screen and (min-width: 450px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 450px) and (min-resolution: 192dpi), screen and (min-width: 450px) and (min-resolution: 2dppx) {
+  .hero__container .hero__container {
+    background-image: url(../../images/Header2@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    background-image: url(../../images/heder3.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__container .hero__container {
+    background-image: url(../../images/heder3@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -411,9 +481,13 @@ body {
   .work-list .item {
     margin-right: 30px;
   }
+  .work-list .item img {
+    display: block;
+  }
   .work-list .item .link {
     display: block;
     position: relative;
+    overflow: hidden;
   }
   .work-list .item .link .title {
     width: 100%;
@@ -428,7 +502,19 @@ body {
     color: #FFFFFF;
     position: absolute;
     left: 0;
-    bottom: 4px;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: -webkit-transform 250ms linear;
+    transition: -webkit-transform 250ms linear;
+    transition: transform 250ms linear;
+    transition: transform 250ms linear, -webkit-transform 250ms linear;
+  }
+  .work-list .item .link:hover .title {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .work-list .item:last-child {
     margin-right: 0;
@@ -1161,6 +1247,13 @@ input[type='checkbox'] {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: #212121;
+  -webkit-transition: color 250ms linear, background 250ms linear;
+  transition: color 250ms linear, background 250ms linear;
+}
+
+.filter .item .button:hover {
+  background-color: #2196F3;
+  color: #FFFFFF;
 }
 
 @media screen and (min-width: 450px) {

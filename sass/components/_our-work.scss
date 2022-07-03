@@ -17,11 +17,14 @@
         .item{           
             margin-right:30px;
 
-            
+            img{
+                display: block;
+            }
 
             .link{
                 display: block;
                 position: relative;
+                overflow: hidden;
 
                 .title {
                     width: 100%;
@@ -36,8 +39,18 @@
                     color: $colorWhite;
                     position: absolute;
                     left: 0;
-                    bottom: 4px;
+                    bottom: 0;
+                    opacity: 0;
+                    transform: translateY(100%);
+                    transition:transform 250ms linear;
                 }
+
+                &:hover .title{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+
             }
         }
         .item:last-child{
