@@ -229,6 +229,7 @@ body {
   }
   .button-menu:active .mobile-menu {
     fill: #2196F3;
+    outline: none;
   }
   .button-menu {
     width: 40px;
