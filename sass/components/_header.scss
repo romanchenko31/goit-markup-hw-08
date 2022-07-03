@@ -188,7 +188,8 @@
             align-items: center;
         }
 
-                .button-menu:active .mobile-menu {
+                .button-menu:active .mobile-menu,
+                .button-menu:visited .mobile-menu {
                     fill: $colorAncient ;
                     outline: none;
                 }
