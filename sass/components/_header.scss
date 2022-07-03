@@ -63,7 +63,8 @@
     {
          color: $colorAncient;
      }
-     .menu__link.current:visited{
+     .menu__link.current:visited,
+     .menu__link.current:active{
          color: $colorAncient;
     }
 

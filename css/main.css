@@ -101,7 +101,8 @@ body {
   color: #2196F3;
 }
 
-.header__nav .menu__link.current:visited {
+.header__nav .menu__link.current:visited,
+.header__nav .menu__link.current:active {
   color: #2196F3;
 }
 
@@ -1254,6 +1255,7 @@ input[type='checkbox'] {
 .filter .item .button:hover {
   background-color: #2196F3;
   color: #FFFFFF;
+  outline: none;
 }
 
 @media screen and (min-width: 450px) {
