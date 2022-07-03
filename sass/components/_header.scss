@@ -63,8 +63,7 @@
     {
          color: $colorAncient;
      }
-     .menu__link.current:visited,
-     .menu__link.current:active{
+     .menu__link.current:visited{
          color: $colorAncient;
     }
 
@@ -188,6 +187,10 @@
             margin: 0 auto;
             align-items: center;
         }
+
+                .button-menu:active .mobile-menu {
+                    fill: $colorAncient ;
+                }
    
         .button-menu {
             width: 40px;
@@ -199,35 +202,20 @@
             justify-content: center;
             background-color: transparent;
 
-            .icon-cross{
-                display: none;
-            }
+            
+                .icon-cross{
+                    display: none;
+                }
 
-            &.is-open .icon-cross{
-                display: block;
-                
-            }
-            &.is-open .icon-menu {
-                display: none;
-            } 
-                  .icon-cross:hover, 
-                  .icon-cross:focus,
-                  .icon-menu:hover,
-                  .icon-menu:focus{
-                    &:hover {
-                            fill: $colorAncient;
-                        }
-            }           
+                &.is-open .icon-cross{
+                    display: block;
+                    
+                }
+                &.is-open .icon-menu {
+                    display: none;
+                } 
+                      
         }
-
-    .button-menu:active,
-    .button-menu:focus,
-    .button-menu:hover,
-    .button-menu:checked
-    {
-        outline: none;
-    }
-
     .header__nav{
         display: none;
         text-align: center;

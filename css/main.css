@@ -101,8 +101,7 @@ body {
   color: #2196F3;
 }
 
-.header__nav .menu__link.current:visited,
-.header__nav .menu__link.current:active {
+.header__nav .menu__link.current:visited {
   color: #2196F3;
 }
 
@@ -228,6 +227,9 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .button-menu:active .mobile-menu {
+    fill: #2196F3;
+  }
   .button-menu {
     width: 40px;
     height: 40px;
@@ -252,18 +254,6 @@ body {
   }
   .button-menu.is-open .icon-menu {
     display: none;
-  }
-  .button-menu .icon-cross:hover:hover,
-  .button-menu .icon-cross:focus:hover,
-  .button-menu .icon-menu:hover:hover,
-  .button-menu .icon-menu:focus:hover {
-    fill: #2196F3;
-  }
-  .button-menu:active,
-  .button-menu:focus,
-  .button-menu:hover,
-  .button-menu:checked {
-    outline: none;
   }
   .header__nav {
     display: none;
