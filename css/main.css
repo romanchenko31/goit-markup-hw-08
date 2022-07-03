@@ -227,10 +227,8 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .button-menu:active .mobile-menu,
-  .button-menu:visited .mobile-menu {
+  .button-menu:active .mobile-menu {
     fill: #2196F3;
-    outline: none;
   }
   .button-menu {
     width: 40px;
@@ -247,6 +245,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     background-color: transparent;
+    outline: none;
   }
   .button-menu .icon-cross {
     display: none;
